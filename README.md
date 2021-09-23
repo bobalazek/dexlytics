@@ -6,9 +6,9 @@ Moonlytics is a tool that analyzes pairs on DEXes to try and find any potential 
 
 ## Functionality
 
-* Sync tokens (only Coingecko right now)
-* Sync created pairs from exchanges (only Pancakeswap V2 right now)
-* Sync created pair swaps
+* Sync tokens - only from Coingecko right now
+* Sync created pairs from exchanges - only Pancakeswap V2 right now. At the time, it does also syncs the token if one from the pair doesn't exist yet
+* Sync created swaps for each pair
 
 ## TODO
 
