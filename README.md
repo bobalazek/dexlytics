@@ -2,7 +2,7 @@
 
 Moonlytics is a tool that analyzes pairs on DEXes to try and find any potential tokens/pairs that are going to the moon!
 
-**Notice: It's still under heavy development and things do not yet work as expected or as fast as they should!**
+**Notice: For the time being, the development on this project is paused until I can figure out a faster way to sync all the swaps from each token on an exchange!**
 
 ## Functionality
 
