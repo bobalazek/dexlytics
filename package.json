@@ -1,0 +1,34 @@
+{
+  "name": "moonlytics",
+  "version": "0.0.1",
+  "description": "Your main source for moonings!",
+  "scripts": {
+    "do": "yarn build && node ./build/index.js",
+    "build": "tsc -p .",
+    "build-bundle": "ncc build ./src/index.ts -o ./build-bundle",
+    "dev": "nodemon ./src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^27.0.0",
+    "@types/node": "^16.4.0",
+    "@types/pg": "^8.6.1",
+    "@vercel/ncc": "^0.29.0",
+    "axios": "^0.21.1",
+    "commander": "^8.0.0",
+    "ethers": "^5.4.1",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.4",
+    "prepend-transform": "^0.0.1019",
+    "reflect-metadata": "^0.1.13",
+    "serialize-error": "^8.1.0",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "web3": "^1.4.0"
+  }
+}

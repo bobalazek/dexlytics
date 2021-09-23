@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  pgadmin:
+    container_name: moonlytics_pgadmin
+    image: dpage/pgadmin4
+    env_file:
+      - .env
+    ports:
+      - ${PGADMIN_LISTEN_PORT:-5050}:${PGADMIN_LISTEN_PORT:-80}
+    networks:
+      - moonlytics-network
+
+  grafana:
+    container_name: moonlytics_grafana
+    image: grafana/grafana:8.1.1
+    env_file:
+      - .env
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana/grafana.ini:/etc/grafana/grafana.ini
+    ports:
+      - ${GRAFANA_PORT_3000:-3000}:3000
+    networks:
+      - moonlytics-network
