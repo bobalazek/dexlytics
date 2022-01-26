@@ -10,7 +10,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/jest": "^27.0.0",
     "@types/node": "^16.4.0",
