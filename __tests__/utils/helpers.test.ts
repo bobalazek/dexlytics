@@ -118,7 +118,7 @@ describe('utils/helpers.ts', () => {
     // TODO
   });
 
-  it('mergeRange', () => {
+  it('mergeRanges', () => {
     expect(mergeRanges([[10, 20], [20, 30], [40, 50]])).toStrictEqual([
       [10, 30],
       [40, 50],
