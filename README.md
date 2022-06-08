@@ -1,6 +1,6 @@
 # Dexlytics
 
-Dexlytics is a tool that analyzes pairs on DEXes to try and find any potential tokens/pairs that are going to the moon!
+Dexlytics is a tool that analyzes token pairs on DEXes.
 
 **Notice: It's still under heavy development and things do not yet work as expected or as fast as they should!**
 
