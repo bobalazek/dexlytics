@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   node:
-    container_name: moonlytics_node
+    container_name: dexlytics_node
     build: .
     tty: true
     env_file:
@@ -12,21 +12,21 @@ services:
     volumes:
       - ./:/app
     networks:
-      - moonlytics-network
+      - dexlytics-network
 
   timescaledb:
-    container_name: moonlytics_timescaledb
+    container_name: dexlyticss_timescaledb
     image: timescale/timescaledb:latest-pg13
     env_file:
       - .env
     volumes:
       - postgres-data:/var/lib/postgresql/data
     networks:
-      - moonlytics-network
+      - dexlytics-network
 
 networks:
-  moonlytics-network:
-    name: moonlytics_network
+  dexlytics-network:
+    name: dexlytics_network
     driver: bridge
 
 volumes:

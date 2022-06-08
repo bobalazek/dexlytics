@@ -2,17 +2,17 @@ version: '3.7'
 
 services:
   pgadmin:
-    container_name: moonlytics_pgadmin
+    container_name: dexlytics_pgadmin
     image: dpage/pgadmin4
     env_file:
       - .env
     ports:
       - ${PGADMIN_LISTEN_PORT:-5050}:${PGADMIN_LISTEN_PORT:-80}
     networks:
-      - moonlytics-network
+      - dexlytics-network
 
   grafana:
-    container_name: moonlytics_grafana
+    container_name: dexlytics_grafana
     image: grafana/grafana:8.1.1
     env_file:
       - .env
@@ -22,4 +22,4 @@ services:
     ports:
       - ${GRAFANA_PORT_3000:-3000}:3000
     networks:
-      - moonlytics-network
+      - dexlytics-network

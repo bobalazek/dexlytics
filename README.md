@@ -1,6 +1,6 @@
-# Moonlytics
+# Dexlytics
 
-Moonlytics is a tool that analyzes pairs on DEXes to try and find any potential tokens/pairs that are going to the moon!
+Dexlytics is a tool that analyzes pairs on DEXes to try and find any potential tokens/pairs that are going to the moon!
 
 **Notice: It's still under heavy development and things do not yet work as expected or as fast as they should!**
 
@@ -29,10 +29,10 @@ Moonlytics is a tool that analyzes pairs on DEXes to try and find any potential 
 
 ## Usage
 
-* Rebuild database: `docker exec -it moonlytics_node yarn do database:rebuild`
-* Sync tokens: `docker exec -it moonlytics_node yarn do tokens:sync [source] [--batch-inserts]`
-* Sync pairs: `docker exec -it moonlytics_node yarn do pairs:sync [exchangeKey] [--from-block-number <fromBlockNumber>|--to-block-number <toBlockNumber>|--batch-inserts|--unprocessed-pairs-only|--multithreaded]`
-* Sync swaps: `docker exec -it moonlytics_node yarn do swaps:sync [exchangeKey] [--pair-ids <pairIds>|--from-block-number <fromBlockNumber>|--to-block-number <toBlockNumber>|--batch-inserts|--unprocessed-pairs-only|--multithreaded]`
+* Rebuild database: `docker exec -it dexlytics_node yarn do database:rebuild`
+* Sync tokens: `docker exec -it dexlytics_node yarn do tokens:sync [source] [--batch-inserts]`
+* Sync pairs: `docker exec -it dexlytics_node yarn do pairs:sync [exchangeKey] [--from-block-number <fromBlockNumber>|--to-block-number <toBlockNumber>|--batch-inserts|--unprocessed-pairs-only|--multithreaded]`
+* Sync swaps: `docker exec -it dexlytics_node yarn do swaps:sync [exchangeKey] [--pair-ids <pairIds>|--from-block-number <fromBlockNumber>|--to-block-number <toBlockNumber>|--batch-inserts|--unprocessed-pairs-only|--multithreaded]`
 
 ## Development
 
@@ -41,4 +41,4 @@ First you'll need to create a new `.env` file by copying `.env.example` files co
 
 ## License
 
-Moonlytics is licensed under the MIT license.
+Dexlytics is licensed under the MIT license.
